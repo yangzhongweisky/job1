@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="js/jq1.11.1.js"></script>
+</head>
+
+<body>
+<img id="tupian" src="src1">
+<button name="images/1.jpg">1</button>
+<button name="images/2.jpg">2</button>
+<button name="images/3.jpg">3</button>
+<button name="images/4.jpg">4</button>
+<button name="images/5.jpg">5</button>
+<button name="images/6.jpg">6</button>
+ 
+<script>
+$(function(){
+    $("button").click(function(){
+        $("#tupian").attr("src",$(this).attr("name"));
+    })
+})
+</script>
+</body>
+</html>
